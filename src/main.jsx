@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import { Root } from './pages/root'
+import './index.css'
 import { ErrorPage } from './pages/errorPage'
+import { Messages } from './pages/messages'
 import { PanelResize } from './pages/panelResize'
+import { Root } from './pages/root'
 import { StepWizard } from './pages/stepWizard'
 
 const router = createBrowserRouter([
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: 'step-wizard',
         element: <StepWizard />
+      },
+      {
+        path: 'messages',
+        element: <Messages />
       }
     ]
   },

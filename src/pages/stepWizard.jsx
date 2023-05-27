@@ -1,3 +1,5 @@
+// resource reference: Sam Selikoff
+// https://buildui.com/series/framer-motion-recipes/multistep-wizard
 /* eslint-disable react/prop-types */
 import { useState } from 'react'
 import { motion } from 'framer-motion'

@@ -1,3 +1,6 @@
+// resource reference: Sam Selikoff
+// https://www.youtube.com/watch?v=G3OyF-lRAWo
+
 /* eslint-disable react/prop-types */
 import { useState } from 'react'
 import { AnimatePresence, MotionConfig, motion } from 'framer-motion'
@@ -106,6 +109,3 @@ const ignoreCircularReferences = () => {
     return value
   }
 }
-
-// resource reference: Sam Selikoff
-// https://www.youtube.com/watch?v=G3OyF-lRAWo

@@ -8,6 +8,7 @@ function Root() {
         <nav>
           <Link to="panel-resize">Panel Resize</Link>
           <Link to="step-wizard">Step Wizard</Link>
+          <Link to="messages">Messages</Link>
         </nav>
       </div>
 
