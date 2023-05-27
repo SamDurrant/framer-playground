@@ -7,6 +7,7 @@ function Root() {
         <h1>Animated Components</h1>
         <nav>
           <Link to="panel-resize">Panel Resize</Link>
+          <Link to="step-wizard">Step Wizard</Link>
         </nav>
       </div>
 

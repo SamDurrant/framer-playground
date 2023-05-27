@@ -5,6 +5,11 @@
 :root {
   --primary-light: #e3e3e3;
   --secondary: #bf4342;
+  --blue-500: #3b82f6;
+  --white: #fff;
+  --black: #333;
+  --slate-200: #e2e8f0;
+  --slate-400: #94a3b8;
 }
 
 *,
@@ -107,7 +112,7 @@ button:active {
 }
 #detail {
   flex: 1;
-  padding: 2rem 4rem;
+  padding: 0 4rem;
   width: 100%;
 }
 

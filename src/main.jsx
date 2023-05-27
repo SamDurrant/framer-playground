@@ -5,6 +5,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { Root } from './pages/root'
 import { ErrorPage } from './pages/errorPage'
 import { PanelResize } from './pages/panelResize'
+import { StepWizard } from './pages/stepWizard'
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {
         path: 'panel-resize',
         element: <PanelResize />
+      },
+      {
+        path: 'step-wizard',
+        element: <StepWizard />
       }
     ]
   },
