@@ -8,6 +8,7 @@ import { PanelResize } from './pages/panelResize'
 import { Root } from './pages/root'
 import { StepWizard } from './pages/stepWizard'
 import { DockWidget } from './pages/dockWidget/dockWidget'
+import { GradientHover } from './pages/gradientHover'
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: 'dock-widget',
         element: <DockWidget />
+      },
+      {
+        path: 'gradient-hover',
+        element: <GradientHover />
       }
     ]
   },

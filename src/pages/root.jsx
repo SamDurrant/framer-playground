@@ -16,7 +16,11 @@ const links = [
   {
     link: 'dock-widget',
     text: 'Dock Widget',
-  }
+  },
+  {
+    link: 'gradient-hover',
+    text: 'Gradient Hover',
+  },
 ]
 
 function Root() {
