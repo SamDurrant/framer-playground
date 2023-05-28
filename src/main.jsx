@@ -9,6 +9,7 @@ import { Root } from './pages/root'
 import { StepWizard } from './pages/stepWizard'
 import { DockWidget } from './pages/dockWidget/dockWidget'
 import { GradientHover } from './pages/gradientHover'
+import { Dropdown } from './pages/dropdownMenu'
 
 const router = createBrowserRouter([
   {
@@ -35,7 +36,11 @@ const router = createBrowserRouter([
       {
         path: 'gradient-hover',
         element: <GradientHover />
-      }
+      },
+      {
+        path: 'dropdown',
+        element: <Dropdown />
+      },
     ]
   },
 ])

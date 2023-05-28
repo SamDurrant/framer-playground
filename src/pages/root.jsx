@@ -21,6 +21,10 @@ const links = [
     link: 'gradient-hover',
     text: 'Gradient Hover',
   },
+  {
+    link: 'dropdown',
+    text: 'Dropdown',
+  },
 ]
 
 function Root() {
