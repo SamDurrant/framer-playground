@@ -13,8 +13,8 @@ function PanelResize() {
 
   return (
     <MotionConfig transition={{ duration }}>
-      <div className="flex min-h-screen flex-col p-10 text-zinc-100">
-        <div className="mx-auto mt-8 h-full w-full max-w-sm border border-zinc-500 pt-8">
+      <div className="flex min-h-screen flex-col p-10 text-zinc-100 w-full">
+        <div className="mx-auto mt-8 w-full max-w-sm border border-zinc-500 pt-8">
           <h1 className="mb-8 text-center text-3xl font-thin">Hello</h1>
           <div className="mb-8 flex justify-between px-8">
             <button

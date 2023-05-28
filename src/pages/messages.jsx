@@ -50,7 +50,7 @@ function Messages() {
   let animatingMessages = messages.slice(lastChangedIndex)
 
   return (
-    <div className="flex flex-col px-4 bg-gray-100 min-h-screen max-h-screen max-w-sm mx-auto overflow-scroll">
+    <div className="flex flex-col px-4 bg-gray-100 min-h-screen max-h-screen max-w-sm w-full mx-auto overflow-scroll">
       <div className="text-right mt-4">
         <button
           onClick={addMessage}

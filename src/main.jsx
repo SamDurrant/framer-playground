@@ -7,6 +7,7 @@ import { Messages } from './pages/messages'
 import { PanelResize } from './pages/panelResize'
 import { Root } from './pages/root'
 import { StepWizard } from './pages/stepWizard'
+import { DockWidget } from './pages/dockWidget/dockWidget'
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: 'messages',
         element: <Messages />
+      },
+      {
+        path: 'dock-widget',
+        element: <DockWidget />
       }
     ]
   },
