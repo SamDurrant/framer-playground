@@ -29,6 +29,10 @@ const links = [
     link: 'slide-sidebar',
     text: 'Slide Sidebar',
   },
+  {
+    link: 'clipboard-copy',
+    text: 'Clipboard Copy',
+  },
 ]
 
 function Root() {

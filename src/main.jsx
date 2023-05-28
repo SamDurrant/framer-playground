@@ -11,6 +11,7 @@ import { DockWidget } from './pages/dockWidget/dockWidget'
 import { GradientHover } from './pages/gradientHover'
 import { Dropdown } from './pages/dropdownMenu'
 import SlideSidebar from './pages/slideSidebar'
+import { ClipboardCopy } from './pages/clipboardCopy'
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: 'slide-sidebar',
         element: <SlideSidebar />
+      },
+      {
+        path: 'clipboard-copy',
+        element: <ClipboardCopy />
       },
     ]
   },
