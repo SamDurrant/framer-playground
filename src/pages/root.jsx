@@ -33,6 +33,10 @@ const links = [
     link: 'clipboard-copy',
     text: 'Clipboard Copy',
   },
+  {
+    link: 'shapes',
+    text: 'Shapes',
+  },
 ]
 
 function Root() {

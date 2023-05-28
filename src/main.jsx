@@ -12,6 +12,7 @@ import { GradientHover } from './pages/gradientHover'
 import { Dropdown } from './pages/dropdownMenu'
 import SlideSidebar from './pages/slideSidebar'
 import { ClipboardCopy } from './pages/clipboardCopy'
+import { ShapesExplorer } from './pages/shapes'
 
 const router = createBrowserRouter([
   {
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
       {
         path: 'clipboard-copy',
         element: <ClipboardCopy />
+      },
+      {
+        path: 'shapes',
+        element: <ShapesExplorer />
       },
     ]
   },
