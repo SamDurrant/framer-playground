@@ -1,10 +1,22 @@
 // Egghead - Will Johnson
 // https://egghead.io/blog/how-to-create-a-sliding-sidebar-menu-with-framer-motion
-
 import { AnimatePresence, motion, useCycle } from 'framer-motion'
+import menuToggle from '../assets/menu-toggle.png'
+import { useState } from 'react'
 
 export default function SlideSidebar() {
   const [open, cycleOpen] = useCycle(false, true)
+  const [setRotate, changeSetRotate] = useState(-90)
+  const [setDelay, changeSetDelay] = useState(.3)
+
+  const handleOpen = () => {
+    const newRotate = setRotate === -90 ? 0 : -90
+    const newDelay = setDelay === .3 ? 0 : .3
+    changeSetRotate(newRotate)
+    changeSetDelay(newDelay)
+    cycleOpen()
+  }
+
   return (
     <main className="bg-white text-slate-700 p-4 flex flex-col">
       <AnimatePresence>
@@ -22,7 +34,12 @@ export default function SlideSidebar() {
               variants={sideVariants}
             >
               {links.map(({ name, to, id }) => (
-                <motion.a key={id} href={to} whileHover={{ scale: 1.1 }} variants={itemVariants}>
+                <motion.a
+                  key={id}
+                  href={to}
+                  whileHover={{ scale: 1.1 }}
+                  variants={itemVariants}
+                >
                   {name}
                 </motion.a>
               ))}
@@ -31,7 +48,14 @@ export default function SlideSidebar() {
         )}
       </AnimatePresence>
       <div className="btn-container mt-auto">
-        <button onClick={cycleOpen}>{open ? 'Close' : 'Open'}</button>
+        <motion.button onClick={handleOpen} initial={false} animate={{ rotate: setRotate, transition: { delay: setDelay } }}>
+          <img
+            className='rotate--90'
+            src={menuToggle}
+            alt="menu toggle"
+            width={25}
+          />
+        </motion.button>
       </div>
     </main>
   )
@@ -40,13 +64,13 @@ export default function SlideSidebar() {
 const sideVariants = {
   closed: {
     transition: {
-      staggerChildren: 0.14,
+      staggerChildren: 0.085,
       staggerDirection: -1,
     },
   },
   open: {
     transition: {
-      staggerChildren: 0.14,
+      staggerChildren: 0.12,
       staggerDirection: 1,
     },
   },
