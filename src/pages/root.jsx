@@ -25,6 +25,10 @@ const links = [
     link: 'dropdown',
     text: 'Dropdown',
   },
+  {
+    link: 'slide-sidebar',
+    text: 'Slide Sidebar',
+  },
 ]
 
 function Root() {

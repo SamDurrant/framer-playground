@@ -10,6 +10,7 @@ import { StepWizard } from './pages/stepWizard'
 import { DockWidget } from './pages/dockWidget/dockWidget'
 import { GradientHover } from './pages/gradientHover'
 import { Dropdown } from './pages/dropdownMenu'
+import SlideSidebar from './pages/slideSidebar'
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: 'dropdown',
         element: <Dropdown />
+      },
+      {
+        path: 'slide-sidebar',
+        element: <SlideSidebar />
       },
     ]
   },
