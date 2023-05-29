@@ -13,6 +13,7 @@ import { Dropdown } from './pages/dropdownMenu'
 import SlideSidebar from './pages/slideSidebar'
 import { ClipboardCopy } from './pages/clipboardCopy'
 import { ShapesExplorer } from './pages/shapes'
+import { Carousel } from './pages/carousel'
 
 const router = createBrowserRouter([
   {
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
       {
         path: 'shapes',
         element: <ShapesExplorer />
+      },
+      {
+        path: 'carousel',
+        element: <Carousel />
       },
     ]
   },

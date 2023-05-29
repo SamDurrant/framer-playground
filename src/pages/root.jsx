@@ -37,6 +37,10 @@ const links = [
     link: 'shapes',
     text: 'Shapes',
   },
+  {
+    link: 'carousel',
+    text: 'Carousel',
+  },
 ]
 
 function Root() {
