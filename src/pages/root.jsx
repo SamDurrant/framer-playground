@@ -41,6 +41,10 @@ const links = [
     link: 'carousel',
     text: 'Carousel',
   },
+  {
+    link: 'line-chart',
+    text: 'Line Chart',
+  },
 ]
 
 function Root() {

@@ -14,6 +14,7 @@ import SlideSidebar from './pages/slideSidebar'
 import { ClipboardCopy } from './pages/clipboardCopy'
 import { ShapesExplorer } from './pages/shapes'
 import { Carousel } from './pages/carousel'
+import { LineChart } from './pages/lineChart'
 
 const router = createBrowserRouter([
   {
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
       {
         path: 'carousel',
         element: <Carousel />
+      },
+      {
+        path: 'line-chart',
+        element: <LineChart />
       },
     ]
   },
